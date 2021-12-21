@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap"
+      rel="stylesheet"
+    /> -->
+    <!-- <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Courier+Prime&display=swap"
+      rel="stylesheet"
+    /> -->
+    <!-- <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap"
+      rel="stylesheet"
+    /> -->
+    <!-- <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Amiri&display=swap"
+      rel="stylesheet"
+    /> -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lora&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static', filename='styles.css') }}"
+    />
+    <title>Index</title>
+  </head>
+  <body>
+    <div class="top-separator">
+      <h1>hello</h1>
+    </div>
+    <h1>Nevin.cc</h1>
+    <p>
+      <a href="/">Home</a> - <a href="/repositories">Repositories</a> -
+      <a href="/images">Images</a>
+    </p>
+    <h3>Now Using a Different Font</h3>
+    <p>
+      Welcome to my website - my old website is
+      <a href="https://nevin.cc/files/nevin_cc">Here</a>
+    </p>
+    <a href="{{ imageSrc }}">
+      <img id="mainImage" src="{{ previewImage }}" />
+    </a>
+    <p id="mainImageTag">{{ imageDescription }}</p>
+    <br />
+    {% block content %}{% endblock %}
+    <p
+      style="
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 25px;
+      "
+    >
+      <em>Last edited: 4/6/2021</em>
+    </p>
+  </body>
+</html>

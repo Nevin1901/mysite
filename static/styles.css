@@ -1,0 +1,25 @@
+* {
+  font-family: "Lora", serif;
+  font-family: 15px;
+  line-height: 130%;
+}
+
+body {
+  max-width: 500px;
+  margin: auto;
+  padding: 20px;
+}
+
+img {
+  object-fit: cover;
+  /*max-width: 500px;*/
+  max-width: 100%;
+}
+
+#mainImageTag {
+  font-style: italic;
+}
+
+.top-separator {
+  border: 10px solid blue;
+}

@@ -1,0 +1,14 @@
+{% extends 'base.html' %} {% block content %}
+<div>
+  <h1>Repositories</h1>
+  {% for repository in repositories %}
+  <div>
+    <h3>
+      <a href="{{ repository.url }}">{{ repository.title }}</a>
+    </h3>
+    <p>{{ repository.description }}</p>
+  </div>
+  {% endfor %}
+</div>
+
+{% endblock %}

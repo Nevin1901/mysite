@@ -1,0 +1,35 @@
+{% extends 'base.html' %} {% block content %}
+<div>
+    <h1>Projects</h1>
+    <div class="project">
+      <h3><a href="https://guesstheprice.net">GuessThePrice.net</a> - 1/1/2021</h3>
+      <a href="{{ url_for('static', filename='guesstheprice.jpeg') }}">
+        <img src="{{ url_for('static', filename='guesstheprice.jpeg') }}" />
+      </a>
+      <p>A fun website where you can guess the price of various items. It was coded using Next JS, used MongoDB as the database, and used Azure Blob Storage to store the images. It was coded with <a href="https://victorchapman.me">Victor</a> and released on the first day of 2021.</p>
+      <p>This was by far our most successful project. After a few weeks of going back and forth, not knowing what to do with the project, we decided to completely re-design and remake the project from scratch.</p>
+      <p>What followed is one of the websites I'm most proud of, and is now played by many each day.</p>
+    </div>
+    <br />
+    <div class="project">
+      <h3><a href="https://github.com/Nevin1901/nweather">nweather</a> - 7/3/2021</h3>
+      <a href="{{ url_for('static', filename='nweather.png') }}">
+        <img
+          src="{{ url_for('static', filename='nweather.png') }}"
+        />
+      </a>
+      <p>A command line weather program coded in c++. It relies on the openweather api for the weather information, and has recently been updated to automatically get the weather for your current location.</p>
+    </div>
+    <br />
+    <div class="project">
+      <h3><a href="https://riggedcoinflip.com">Riggedcoinflip.com</a> - 31/7/2020</h1>
+        <a href="{{ url_for('static', filename='riggedcoinflip.png') }}">
+          <img src="{{ url_for('static', filename='riggedcoinflip.png') }}" />
+        </a>
+        <p>The first website <a href="https://victorchapman.me">Victor</a> and I made - A website where you can rig a coin flip to land on whatever side you want it to be. Unlike other coinflip websites (which weren't rigged), we tried to give <a href="https://riggedcoinflip.com">Rigged Coin Flip</a> unique functionality and design, while still trying to keep things simple.</p>
+        <p>We had originally posted the website on r/internetisbeautiful, and then relied on it appearing first whenever you googled "rigged coin flip" to get people to discover it.</p>
+        <p>As of 20 April, 2021, the coins on the website have been clicked over 300,000 times.</p>
+    </div>
+</div>
+
+{% endblock content %}
